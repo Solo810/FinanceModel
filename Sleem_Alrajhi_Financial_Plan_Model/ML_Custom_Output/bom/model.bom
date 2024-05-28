@@ -11,7 +11,7 @@ class ML_Custom_Output
                 property ads.attributeId "1"
                 property com.fasterxml.jackson.annotation.JsonProperty "error"
                 #update;
-    long prediction
+    double prediction
                 property ads.attributeId "2"
                 property com.fasterxml.jackson.annotation.JsonProperty "prediction"
                 #update;
@@ -20,7 +20,7 @@ class ML_Custom_Output
                 property com.fasterxml.jackson.annotation.JsonProperty "probabilities"
                 #update;
     ML_Custom_Output(string error, 
-        long prediction, 
+        double prediction, 
         java.util.List probabilities domain 0,* class double)
                 #autoExpand
                 #beanConstructor
