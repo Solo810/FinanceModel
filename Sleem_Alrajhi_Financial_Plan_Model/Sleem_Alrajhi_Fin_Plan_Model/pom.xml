@@ -37,6 +37,11 @@
 
 <dependencies>
         <dependency>
+            <groupId>ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model</groupId>
+            <artifactId>businessObjects</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
         </dependency>

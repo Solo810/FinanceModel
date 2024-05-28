@@ -34,11 +34,11 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Output" collection="false" name="ML model invocation"/>
-                <output bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Error" collection="false" name="Output mapping"/>
+                <output bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.businessobjects.ML_Output" collection="false" name="Output mapping"/>
                 <rule defaultRule="false" href="output-mapping/Get%20Business%20Friendly%20Output.drl" kind="BusinessRule" name="Get Business Friendly Output"/>
             </ruleset>
         </extensionElements>
-        <variable id="output_mapping_ii" name="Output mapping" typeRef="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Error"/>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.businessobjects.ML_Output"/>
         <informationRequirement>
             <requiredInput href="#Prediction"/>
         </informationRequirement>
