@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Sleem_Alrajhi_Fin_Plan_Model">
+  <name>Sleem_Alrajhi_Fin_Plan_Model</name>
+  <uuid>4848f7a8-b9c4-482e-a23f-90773d1692a5</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#b95f1bc3-2a31-4b1d-a67a-5027698e3ef6"/>
+  <targetRuleProject href="../../Sleem_Alrajhi_Fin_Plan_Model#c7810c33-e197-477c-967d-0a01e0be2092"/>
+  <tags key="ProviderType">
+    <value><![CDATA[OPS]]></value>
+  </tags>
+  <tags key="ProviderId">
+    <value><![CDATA[disconnectedProvider]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

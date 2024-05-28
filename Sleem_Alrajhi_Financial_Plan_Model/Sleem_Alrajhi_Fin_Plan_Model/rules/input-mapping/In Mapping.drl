@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>In Mapping</name>
+  <uuid>a3c5723e-a517-4cf2-8f53-88ee877b5d4d</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[  set decision to a new ML model input where
+		the customer family size is the customer family size of 'Parameters for ML' , 
+		the customer number of dependent children is the customer number of dependent children  of 'Parameters for ML', 
+		the customer internet banking indicator is the customer internet banking indicator  of 'Parameters for ML', 
+		the customer annual income is the customer annual income  of 'Parameters for ML', 
+		the customer summary number of accounts is the customer summary number of accounts of 'Parameters for ML', 
+		the customer summary total amount of deposits is the customer summary total amount of deposits  of 'Parameters for ML' , 
+		the customer tenure in months is the customer tenure in months of 'Parameters for ML', 
+		the customer employment status employed is the customer employment status employed of 'Parameters for ML', 
+		the customer employment status homemaker is the customer employment status homemaker of 'Parameters for ML', 
+		the customer employment status retired is the customer employment status retired of 'Parameters for ML'  , 
+		the customer employment status selfemployed is the customer employment status selfemployed of 'Parameters for ML', 
+		the customer employment status unemployed is the customer employment status unemployed of 'Parameters for ML', 
+		the customer marital status divorced is the customer marital status divorced of 'Parameters for ML', 
+		the customer marital status married is the customer marital status married of 'Parameters for ML', 
+		the customer marital status single is the customer marital status single of 'Parameters for ML', 
+		the customer urban code city is the customer urban code city of 'Parameters for ML', 
+		the customer urban code rural is the customer urban code rural of 'Parameters for ML' , 
+		the customer urban code urban is the customer urban code urban of 'Parameters for ML', 
+		the customer market group accumulating is the customer market group accumulating of 'Parameters for ML', 
+		the customer market group gifting is the customer market group gifting of 'Parameters for ML', 
+		the customer market group spending is the customer market group spending of 'Parameters for ML', 
+		the customer market group starting is the customer market group starting  of 'Parameters for ML', 
+		the customer education level college is the customer education level college of 'Parameters for ML', 
+		the customer education level high school is the customer education level high school of 'Parameters for ML', 
+		the customer education level phd is the customer education level phd of 'Parameters for ML', 
+		the customer education level professional is the customer education level professional of 'Parameters for ML', 
+		the customer education level university is the customer education level university of 'Parameters for ML', 
+		the customer age range23 to30 is the customer age range23 to30 of 'Parameters for ML', 
+		the customer age range30 to40 is the customer age range30 to40 of 'Parameters for ML', 
+		the customer age range40 to55 is the customer age range40 to55 of 'Parameters for ML', 
+		the customer age range55 to65 is the customer age range55 to65 of 'Parameters for ML', 
+		the customer age range65 and over is the customer age range65 and over of 'Parameters for ML', 
+		the customer gender female is the customer gender female of 'Parameters for ML', 
+		the customer gender male is the customer gender male of 'Parameters for ML';]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

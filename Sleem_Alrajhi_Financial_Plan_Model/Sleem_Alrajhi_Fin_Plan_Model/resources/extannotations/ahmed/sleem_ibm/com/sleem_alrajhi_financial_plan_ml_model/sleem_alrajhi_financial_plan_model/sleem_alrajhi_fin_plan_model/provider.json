@@ -1,0 +1,17 @@
+{
+  "name" : "Ahmed.Sleem-ibm.com/Sleem_Alrajhi_Financial_Plan_ML_Model/Get Financial Plan1716886240481",
+  "type" : "WML",
+  "description" : "",
+  "updateTime" : 1716886242673,
+  "authInfo" : {
+    "authType" : "IAM",
+    "apiKey" : null,
+    "authUrl" : "https://iam.bluemix.net/identity/token"
+  },
+  "providerAdditionalInfo" : {
+    "providerType" : "WML",
+    "mlUrl" : "https://us-south.ml.cloud.ibm.com/ml/v4/",
+    "spaceId" : "dd418181-41ef-4e01-a466-b9c1c6b9c95c"
+  },
+  "version" : "V1"
+}

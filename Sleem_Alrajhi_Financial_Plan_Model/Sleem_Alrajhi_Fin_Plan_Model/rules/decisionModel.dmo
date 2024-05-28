@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Sleem_Alrajhi_Fin_Plan_Model</name>
+  <uuid>b95f1bc3-2a31-4b1d-a67a-5027698e3ef6</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="sleem_Alrajhi_Fin_Plan_Model" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input" name="Parameters for ML">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Input" collection="false" name="Parameters for ML"/>
+                <rule defaultRule="true" href="input/default-value-setting.drl" kind="BusinessRule" name="default-value-setting"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_ii" name="Parameters for ML" typeRef="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Input"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Input" collection="false" name="Parameters for ML"/>
+                <output bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/In%20Mapping.drl" kind="BusinessRule" name="In Mapping"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output-mapping" name="Output mapping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Output" collection="false" name="ML model invocation"/>
+                <output bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.ml_custom_output.ML_Custom_Output" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/Get%20Business%20Friendly%20Output.drl" kind="BusinessRule" name="Get Business Friendly Output"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.ml_custom_output.ML_Custom_Output"/>
+        <informationRequirement>
+            <requiredInput href="#Prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="Prediction" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Input" collection="false" name="Input mapping"/>
+                <output bomType="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="Prediction/Prediction.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="prediction_ii" name="ML model invocation" typeRef="ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.sleem_alrajhi_fin_plan_model.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
