@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model</groupId>
-    <artifactId>ML_Custom_Output</artifactId>
+    <artifactId>businessObjects</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,10 +26,10 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>ML_Custom_Output</name>
+                            <name>Business-Objects</name>
                         </deployment>
                     </deployments>
-                <packageName>ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.ml_custom_output</packageName>
+                <packageName>ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.businessobjects</packageName>
                 </configuration>
             </plugin>
         </plugins>

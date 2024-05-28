@@ -1,9 +1,9 @@
 
-package ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.ml_custom_output;
+package ahmed.sleem_ibm.com.sleem_alrajhi_financial_plan_ml_model.sleem_alrajhi_financial_plan_model.businessobjects;
 
 
 class ML_Output
-        property ads.typeId "2"
+        property ads.typeId "1"
         property com.fasterxml.jackson.annotation.JsonTypeName "ML_Output"
         #de.generated
 {
