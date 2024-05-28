@@ -65,7 +65,7 @@
     <modules>
         <module>.decisionservice</module>
         <module>Sleem_Alrajhi_Fin_Plan_Model</module>
-        <module>ML_Custom_Output</module>
+        <module>Business Objects</module>
     </modules>
 
     <build>
